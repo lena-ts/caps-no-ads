@@ -1,7 +1,8 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 import { StatusBar, SafeAreaView} from 'react-native';
-import {store, persistor} from './src/store';
+// import {store, persistor} from './src/store';
+import store from './src/store'
 import * as Localization from 'expo-localization';
 import i18n from 'i18n-js';
 import {translations} from "./translations";
@@ -16,12 +17,12 @@ i18n.fallbacks = true;
 export default function App() {
   return (
       <Provider store={store}>
-          <PersistGate loading={null} persistor={persistor}>
+          {/*<PersistGate loading={null} persistor={persistor}>*/}
           <StatusBar barStyle="light-content"/>
           <AppNavigation/>
               <SafeAreaView style={{backgroundColor: 'black'}}>
               </SafeAreaView>
-          </PersistGate>
+          {/*</PersistGate>*/}
       </Provider>
   );
 }

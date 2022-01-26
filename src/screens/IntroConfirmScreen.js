@@ -32,9 +32,9 @@ export const IntroConfirmScreen = ({route, navigation}) => {
             <View style={styles.wrapper}>
                 <ImageButton
                     imageButtonAction={() => handlePress("back")}
-                    text="back"
+                    // text="back"
                     img={null}
-                    icon= {<Ionicons name="ios-arrow-back" size={16} color="black" style={{marginRight: 5}}/>}
+                    icon= {<Ionicons name="ios-arrow-back" size={24} color="black" style={{marginRight: 5}}/>}
                 />
                 <ImageButton
                     imageButtonAction={() => handlePress("confirm")}

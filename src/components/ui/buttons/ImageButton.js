@@ -16,7 +16,7 @@ export const ImageButton = ({imageButtonAction, text, img, icon}) => {
                     source={img}
                 /> : null}
                 {icon ? icon : null}
-                <Text style={styles.text}>{i18n.t(text)}</Text>
+                <Text style={styles.text}>{text ? i18n.t(text) : null}</Text>
             </TouchableOpacity>
         </View>
     )

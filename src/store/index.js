@@ -27,11 +27,11 @@ const store = createStore(persistedReducer)
 
 let persistor = persistStore(store)
 
-export {
-    store,
-    persistor,
-};
+// export {
+//     store,
+//     persistor,
+// };
 
-// export default createStore(rootReducer,   compose(
-//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-// ))
+export default createStore(rootReducer,   compose(
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+))
